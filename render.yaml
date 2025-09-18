@@ -5,6 +5,7 @@ services:
     dockerfilePath: ./Dockerfile
     dockerContext: .
     plan: starter
+    region: frankfurt
     healthCheckPath: /health
     autoDeployTrigger: off
     envVars:
@@ -81,3 +82,5 @@ databases:
     databaseName: openwebui
     user: openwebui
     plan: basic-256mb
+    region: frankfurt
+    postgresMajorVersion: "17"
